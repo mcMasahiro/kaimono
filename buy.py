@@ -36,10 +36,12 @@ class Buyer:
         description: ひき肉を1つ購入する
         """
         self._buy_item(Item.MEAT, 1)
+        print("サブ食材購入完了")
 
     def print_bought_items(self) -> None:
         """購入リストを出力する"""
         print(self._bought_items)
+        print("完了")
 
     def _buy_item(self, item: Item, num: int) -> None:
         """指定アイテムを購入する
